@@ -17,7 +17,7 @@ export const sessionApi = {
   },
 
   getActiveSessions: async () => {
-    const res = await fetch(`${BASE_URL}/session/active`, {
+    const res = await fetch(`https://meet-mint-server.onrender.com/api/session/active`, {
       credentials: "include",
     });
 
@@ -25,7 +25,7 @@ export const sessionApi = {
   },
 
   getMyRecentSessions: async () => {
-    const res = await fetch(`${BASE_URL}/session/my-recent`, {
+    const res = await fetch(`https://meet-mint-server.onrender.com/api/session/my-recent`, {
       credentials: "include",
     });
 
